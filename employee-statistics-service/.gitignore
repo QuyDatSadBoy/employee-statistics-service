@@ -1,10 +1,19 @@
+# =====================================
+# GITIGNORE CHO DỰ ÁN SPRING BOOT
+# =====================================
+
+# Spring Boot - Files tự động tạo
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# =====================================
+# IDE - MÔTRƯỜNG PHÁT TRIỂN
+# =====================================
+
+### Spring Tool Suite (STS) ###
 .apt_generated
 .classpath
 .factorypath
@@ -18,6 +27,8 @@ target/
 *.iws
 *.iml
 *.ipr
+out/
+*.log
 
 ### NetBeans ###
 /nbproject/private/
@@ -29,5 +40,163 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+### Visual Studio Code ###
 .vscode/
+
+### Eclipse ###
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+# =====================================
+# BUILD VÀ DEPENDENCIES
+# =====================================
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (nếu có)
+.gradle
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# =====================================
+# LOGS VÀ TEMPORARY FILES
+# =====================================
+
+# Log files
+*.log
+logs/
+spring.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# =====================================
+# CONFIGURATION VÀ SECRETS
+# =====================================
+
+# Application configuration với thông tin nhạy cảm
+application-local.properties
+application-dev.properties
+application-prod.properties
+application-secret.properties
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Database files (nếu dùng H2 embedded)
+*.db
+*.h2.db
+
+# =====================================
+# OPERATING SYSTEM
+# =====================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# =====================================
+# DOCUMENTATION VÀ REPORTS
+# =====================================
+
+# JavaDoc
+/javadoc/
+
+# Test coverage reports
+/coverage/
+*.exec
+jacoco.exec
+
+# Surefire reports
+/surefire-reports/
+
+# =====================================
+# CONTAINERS VÀ DEPLOYMENT
+# =====================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml.bak
+*.yml.bak
+
+# =====================================
+# BACKUP VÀ ARCHIVE FILES
+# =====================================
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Archive files
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# =====================================
+# DEVELOPMENT TOOLS
+# =====================================
+
+# JRebel
+rebel.xml
+
+# JProfiler
+*.jprofile
+
+# Node modules (nếu có frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =====================================
+# CUSTOM - TÙY CHỈNH CHO DỰ ÁN
+# =====================================
+
+# Thêm các file/folder riêng của dự án tại đây
+# uploads/
+# reports/
+# temp-data/
